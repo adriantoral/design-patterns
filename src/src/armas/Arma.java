@@ -1,4 +1,4 @@
-package Armas;
+package armas;
 
 public abstract class Arma
 {

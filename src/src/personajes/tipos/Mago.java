@@ -1,6 +1,6 @@
 package personajes.tipos;
 
-import Armas.Arma;
+import armas.Arma;
 import personajes.Personaje;
 
 public class Mago extends Personaje

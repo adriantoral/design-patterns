@@ -1,7 +1,6 @@
 package personajes.tipos;
 
-import Armas.Arma;
-import personajes.EstadoVida;
+import armas.Arma;
 import personajes.Personaje;
 
 public class Mutante extends Personaje
