@@ -11,8 +11,7 @@ package personajes;
  * - Nulo => En cualquier otro caso (ERROR)
  * */
 
-public class patronState{
+public abstract class patronState{
 	
-	
-
+	public abstract void hacerEstado();
 }
