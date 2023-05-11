@@ -1,18 +1,17 @@
 package personajes.tipos;
 
 import Armas.Arma;
-import personajes.EstadoVida;
 import personajes.Personaje;
 
 public class Mago extends Personaje
 {
-    public Mago(int fuerza, int resistencia, int agilidad, int vida, EstadoVida estadoVida, Arma arma)
+    public Mago(int fuerza, int resistencia, int agilidad, Arma arma)
     {
-        super(fuerza, resistencia, agilidad, vida, estadoVida, arma);
+        super(fuerza, resistencia, agilidad, arma);
     }
 
     @Override
-    public void atacar()
+    public void atacar(Personaje personaje)
     {
 
     }

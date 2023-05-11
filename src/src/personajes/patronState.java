@@ -1,5 +1,6 @@
 package personajes;
 
-public class patronState {
+public class patronState
+{
 
 }

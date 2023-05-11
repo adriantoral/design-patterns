@@ -6,13 +6,13 @@ import personajes.Personaje;
 
 public class Mutante extends Personaje
 {
-    public Mutante(int fuerza, int resistencia, int agilidad, int vida, EstadoVida estadoVida, Arma arma)
+    public Mutante(int fuerza, int resistencia, int agilidad, Arma arma)
     {
-        super(fuerza, resistencia, agilidad, vida, estadoVida, arma);
+        super(fuerza, resistencia, agilidad, arma);
     }
 
     @Override
-    public void atacar()
+    public void atacar(Personaje personaje)
     {
 
     }
