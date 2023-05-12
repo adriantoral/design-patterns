@@ -1,6 +1,6 @@
 package personajes;
 
-public class malherido extends patronState{
+public class Malherido extends EstadoJugador{
 
 	@Override
 	public void hacerEstado() {
