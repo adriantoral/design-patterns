@@ -9,9 +9,10 @@ public abstract class Arma
      * Si tiene el personaje 100 de agilidad, y el arma 15 de agilidad, el personaje en realidad tendra 115 de agilidad y atacara mas rapido.
      * El nombre identifica el arma.
      */
+	
     private int danio, utilidad, agilidad;
     private String nombre;
-
+    
     /**
      * Inicializa la clase Arma con el danio, utilidad y agilidad.
      */

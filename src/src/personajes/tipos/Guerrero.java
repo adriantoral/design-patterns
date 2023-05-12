@@ -13,8 +13,9 @@ public class Guerrero extends Personaje
     @Override
     public void atacar(Personaje personaje)
     {
-
-    }
+    	
+       
+    }  
 
     @Override
     public void curar()
