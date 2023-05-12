@@ -21,7 +21,7 @@ public class Calculador
 
     /*
      * Es una funcion que se encarga de calcular el daño total hecho, sumando la fuerza mas el daño del arma y a este daño se le añade porcentualmente la agilidad, y se le resta a todo la resistencia del personaje
-     * Se pone en valor absoluto para no obtener numeros negativos y es un double por la gailidad ya que es porcentual
+     * Se pone en valor absoluto para no obtener numeros negativos y hacemos un casting para obtener la parte entera de la agilidad
      */
     public int calculaResultadoAtaque(Personaje atacante, Personaje atacado)
     {
