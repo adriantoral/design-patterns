@@ -3,7 +3,7 @@ package personajes;
 /*
  * Controlar el estado de los personajes durante el combate, de forma que los personajes vayan pasando de un estado a otro.
  * El Personaje va a tener diferentes estados, entre (MUERTO, MALHERIDO, HERIDO, SALUDABLE, NULO)
- * 
+ *
  * - Muerto => Cuando se ha quedado sin vida o esta a punto (0-25)
  * - Malherido => Cuando esta a punto de quedarse sin vida (25-50)
  * - Herido => Cuando ha sido atacado (50-75)
@@ -11,7 +11,8 @@ package personajes;
  * - Nulo => En cualquier otro caso (ERROR)
  * */
 
-public abstract class EstadoJugador{
-	
-	public abstract void hacerEstado();
+public abstract class EstadoJugador
+{
+
+    public abstract void hacerEstado();
 }

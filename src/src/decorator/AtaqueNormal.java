@@ -2,27 +2,28 @@ package decorator;
 
 import personajes.Personaje;
 
-public class AtaqueNormal implements Ataque{
-	
-	private Personaje atacante;
-	
-	public AtaqueNormal(Personaje atacante) {
-		this.atacante = atacante;
-	}
+public class AtaqueNormal implements Ataque
+{
+    private Personaje atacante;
 
-	@Override
-	public void atacar() {
-		System.out.println("ataque con " + atacante.getArma().getNombre());
-		
-	}
+    public AtaqueNormal(Personaje atacante)
+    {
+        this.atacante = atacante;
+    }
 
-	public Personaje getAtacante() {
-		return atacante;
-	}
+    @Override
+    public void atacar()
+    {
+        System.out.println("Ataque con " + atacante.getArma().getNombre());
+    }
 
-	public void setAtacante(Personaje atacante) {
-		this.atacante = atacante;
-	}
-	
+    public Personaje getAtacante()
+    {
+        return atacante;
+    }
 
+    public void setAtacante(Personaje atacante)
+    {
+        this.atacante = atacante;
+    }
 }

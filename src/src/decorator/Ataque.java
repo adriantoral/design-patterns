@@ -1,7 +1,6 @@
 package decorator;
 
-import personajes.Personaje;
-
-public interface Ataque {
-	void atacar();
+public interface Ataque
+{
+    public void atacar();
 }

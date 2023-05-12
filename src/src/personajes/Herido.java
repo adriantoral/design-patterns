@@ -1,10 +1,12 @@
 package personajes;
 
-public class Herido extends EstadoJugador{
+public class Herido extends EstadoJugador
+{
 
-	@Override
-	public void hacerEstado() {
-		System.out.println("JUGADOR HERIDO");			
-	}
+    @Override
+    public void hacerEstado()
+    {
+        System.out.println("JUGADOR HERIDO");
+    }
 
 }
