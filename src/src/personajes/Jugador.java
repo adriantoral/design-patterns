@@ -19,7 +19,6 @@ public class Jugador extends Personaje
     public Jugador()
     {
         super(25, 40, 33, new Martillo());
-        estado = new Saludable();
     }
 
     /**
