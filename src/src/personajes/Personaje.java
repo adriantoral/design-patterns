@@ -40,7 +40,6 @@ public abstract class Personaje
      */
     public abstract void curar();
 
-
     /**
      * Esta funcion se usa para aumentar las resistencias del personaje.
      */
