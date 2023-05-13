@@ -2,21 +2,24 @@ package armas.defensa;
 
 import armas.Arma;
 
-public class Caparazon extends Arma {
+public class Caparazon extends Arma
+{
 
-	public Caparazon() {
+	public Caparazon ( )
+	{
 		super(6, 17, 8, "Caparazon");
 		//inicia la clase Espada
-		
+
 	}
 
 	@Override
-	public void reparar() {
+	public void reparar ( )
+	{
 		//reparar el caparazon a con 2 puntos de utilidad
-		
-		this.setUtilidad(this.getUtilidad() + 2);
+
+		this.setUtilidad(this.getUtilidad( ) + 2);
 	}
-	
+
 }
 
 

@@ -9,22 +9,22 @@ import personajes.Personaje;
  */
 public class Calculador
 {
-    private static Calculador miCalculador;
+	private static Calculador miCalculador;
 
-    public static Calculador getCalculador()
-    {
-        if (miCalculador == null)                       // Un if para ver si no existe la instancia
-            miCalculador = new Calculador();                            // Crea la instancia llamada Calculador
+	public static Calculador getCalculador ( )
+	{
+		if (miCalculador == null)                       // Un if para ver si no existe la instancia
+			miCalculador = new Calculador( );                            // Crea la instancia llamada Calculador
 
-        return miCalculador;                                            //Devuelve la instancia
-    }
+		return miCalculador;                                            //Devuelve la instancia
+	}
 
-    /*
-     * Es una funcion que se encarga de calcular el daño total hecho, sumando la fuerza mas el daño del arma y a este daño se le añade porcentualmente la agilidad, y se le resta a todo la resistencia del personaje
-     * Se pone en valor absoluto para no obtener numeros negativos y hacemos un casting para obtener la parte entera de la agilidad
-     */
-    public int calculaResultadoAtaque(Personaje atacante, Personaje atacado)
-    {
-        return Math.abs((atacado.getResistencia()) - ((atacante.getFuerza() + atacado.getArma().getDanio()) + (int) (0.25 * atacante.getAgilidad())));
-    }
+	/*
+	 * Es una funcion que se encarga de calcular el daño total hecho, sumando la fuerza mas el daño del arma y a este daño se le añade porcentualmente la agilidad, y se le resta a todo la resistencia del personaje
+	 * Se pone en valor absoluto para no obtener numeros negativos y hacemos un casting para obtener la parte entera de la agilidad
+	 */
+	public int calculaResultadoAtaque (Personaje atacante, Personaje atacado)
+	{
+		return Math.abs((atacado.getResistencia( )) - ((atacante.getFuerza( ) + atacado.getArma( ).getDanio( )) + (int) (0.25 * atacante.getAgilidad( ))));
+	}
 }

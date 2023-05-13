@@ -1,12 +1,17 @@
 package estrategias;
 
-public interface EstrategiaPrincipal{
-
+public interface EstrategiaPrincipal
+{
 	//despues de eso pasarlo todo a otra clase diferente y ya popr ultimo modificar las funciones
-	public int defensa(int defensa);
-	public int ataque(int ataque);
-	public int vida(int vida);
-	public int curar(int cura);
-	public void pasar();
-	public int repararArma(int reparacion);
+	int defensa (int defensa);
+
+	int ataque (int ataque);
+
+	int vida (int vida);
+
+	int curar (int cura);
+
+	void pasar ( );
+
+	int repararArma (int reparacion);
 }

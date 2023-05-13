@@ -2,5 +2,5 @@ package decorator;
 
 public interface Ataque
 {
-    public void atacar();
+	void atacar ( );
 }

@@ -11,9 +11,10 @@ package personajes;
  * - Nulo => En cualquier otro caso (ERROR)
  * */
 
-public abstract class EstadoJugador{
-	
+public abstract class EstadoJugador
+{
+
 	protected Personaje personaje;
 
-    public abstract void hacerEstado();
+	public abstract void hacerEstado ( );
 }
