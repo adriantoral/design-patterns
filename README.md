@@ -1,8 +1,8 @@
 # design-patterns
-El objetivo de este proyecto es desarrollar un juego de ordenador en el que el protagonista vayacombatiendo contra los enemigos que se va encontrando, utilizando para ello diferentes armas, tiposde ataque, etc.
+El objetivo de este proyecto es desarrollar un juego de ordenador en el que el protagonista vaya combatiendo contra los enemigos que se va encontrando, utilizando para ello diferentes armas, tiposde ataque, etc.
 
 # Trabajo repartido:
-1. David         - (1 punto) Se deberá utilizar el patrón Strategy para gestionar el conjunto de estrategias posiblesy la estrategia que en cada combate adopte el enemigo de turno.
+1. David         - (1 punto) Se deberá utilizar el patrón Strategy para gestionar el conjunto de estrategias posibles y la estrategia que en cada combate adopte el enemigo de turno.
 2. Guille        - (1 punto) Se deberá emplear un patrón Decorator para gestionar las distintas acciones a realizarpor los personajes: se decorará la acción básica con los modificadores adecuados dependiendode la estrategia y las características del personaje. Por ejemplo, si el personaje realiza un ‘ataquecon espada’, este ataque habrá que decorarlo para hacerlo un ‘ataque poderoso con espada’ siel personaje tiene un alto valor de su atributo Fuerza.
 3. Paula M.      - (1 punto) Se deberá emplear un patrón State para controlar el estado de los personajes duranteel combate, de forma que los personajes vayan pasando de un estado a otro dependiendo de lasincidencias del combate.
 4. Paula L.      - (1 punto) Se deberá emplear un patrón Singleton en la clase encargada de hacer los cálculossobre el resultado de los ataques, para que sólo haya una instancia de dicho ‘calculador’ en elsistema.
