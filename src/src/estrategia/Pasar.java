@@ -11,6 +11,7 @@ public class Pasar implements EstrategiaPrincipal
 		// código para pasar el turno 
 		System.out.println("El personaje ha pasado su turno.");
 
+		personaje.pasar();
 	}
 
 }

@@ -11,6 +11,7 @@ public class Defensa implements EstrategiaPrincipal
 		// código para realizar la defensa
 		System.out.println("El personaje ha aumentado la defensa en un " + personaje.getResistencia( ));
 
+		personaje.defender();
 	}
 
 }

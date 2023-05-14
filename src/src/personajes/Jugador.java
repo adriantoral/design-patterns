@@ -65,7 +65,7 @@ public class Jugador extends Personaje
 	 * Cura al personaje en 20 unidades de vida.
 	 */
 	@Override
-	public void curar ( )
+	public void curar ()
 	{
 		this.setVida(this.getVida( ) + 20);
 		Curar curar = new Curar( );
@@ -76,7 +76,7 @@ public class Jugador extends Personaje
 	 * Aumenta la resistencia en 5 unidades.
 	 */
 	@Override
-	public void defender ( )
+	public void defender ()
 	{
 		this.setResistencia(this.getResistencia( ) + 5);
 		Defensa defender = new Defensa( );
@@ -87,7 +87,7 @@ public class Jugador extends Personaje
 	 *
 	 */
 	@Override
-	public void pasar ( )
+	public void pasar ()
 	{
 		Pasar pasar = new Pasar( );
 		pasar.ejecutar(this);
@@ -97,7 +97,7 @@ public class Jugador extends Personaje
 	 * Repara el arma.
 	 */
 	@Override
-	public void repararArma ( )
+	public void repararArma ()
 	{
 		this.getArma( ).reparar( );
 		RepararArma reparar = new RepararArma( );

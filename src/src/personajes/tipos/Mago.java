@@ -34,14 +34,14 @@ public abstract class Mago extends Personaje
 
 
 	@Override
-	public void curar ( )
+	public void curar ()
 	{
 		this.setVida(this.getVida( ) + 20);
 		Curar curar = new Curar();
 		curar.ejecutar(this);
 	}
 	@Override
-	public void defender ( )
+	public void defender ()
 	{
 		this.setResistencia(this.getResistencia( ) + 5);
 		Defensa defender = new Defensa();
@@ -49,7 +49,7 @@ public abstract class Mago extends Personaje
 	}
 
 	@Override
-	public void pasar ( )
+	public void pasar ()
 	{
 		Pasar pasar= new Pasar();
 		pasar.ejecutar(this);
@@ -57,7 +57,7 @@ public abstract class Mago extends Personaje
 
 
 	@Override
-	public void repararArma ( )
+	public void repararArma ()
 	{
 		this.getArma( ).reparar( );
 		RepararArma reparar = new RepararArma();

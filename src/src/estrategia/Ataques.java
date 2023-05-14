@@ -12,4 +12,11 @@ public class Ataques implements EstrategiaPrincipal
 		System.out.println("El personaje  ha realizado un ataque con " + personaje.getArma( ));
 	}
 
+	public void ejecutar (Personaje personaje, Personaje enemigo)
+	{
+		// código para realizar el ataque
+		this.ejecutar(enemigo);
+		
+		personaje.atacar(enemigo);
+	}
 }

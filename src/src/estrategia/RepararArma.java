@@ -9,8 +9,10 @@ public class RepararArma implements EstrategiaPrincipal
 	public void ejecutar (Personaje personaje)
 	{
 		// código para reparar el arma
+		
 		System.out.println("El personaje ha reparado su arma ");
 
+		personaje.repararArma();
 	}
 
 }

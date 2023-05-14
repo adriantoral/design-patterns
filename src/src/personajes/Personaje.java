@@ -6,6 +6,7 @@ import personajes.estados.Malherido;
 import personajes.estados.Muerto;
 import personajes.estados.Saludable;
 
+
 public abstract class Personaje
 {
 	/**
@@ -44,22 +45,22 @@ public abstract class Personaje
 	/**
 	 * Con esta funcion el personaje se cura vida.
 	 */
-	public abstract void curar ( );
+	public abstract void curar ();
 
 	/**
 	 * Esta funcion se usa para aumentar las resistencias del personaje.
 	 */
-	public abstract void defender ( );
+	public abstract void defender ();
 
 	/**
 	 * Esta funcion salta el turno del personaje.
 	 */
-	public abstract void pasar ( );
+	public abstract void pasar ();
 
 	/**
 	 * Esta funcion repara la utilidad del arma.
 	 */
-	public abstract void repararArma ( );
+	public abstract void repararArma ();
 
 	public int getFuerza ( )
 	{
@@ -150,5 +151,13 @@ public abstract class Personaje
 			this.estadoJugador = new Saludable( );
 		}
 
+		
 	}
+
+	@Override
+	public String toString() {
+		return "Personaje [fuerza=" + fuerza + ", resistencia=" + resistencia + ", agilidad=" + agilidad + ", vida="
+				+ vida + ", estadoVida=" + estadoVida + ", estadoJugador=" + estadoJugador + ", arma=" + arma + "]";
+	}
+	
 }

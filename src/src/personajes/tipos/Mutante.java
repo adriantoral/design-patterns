@@ -32,7 +32,7 @@ public abstract class Mutante extends Personaje
 		ataques.ejecutar(this);
 	}
 	@Override
-	public void curar ( )
+	public void curar ()
 	{
 		this.setVida(this.getVida( ) + 20);
 		Curar curar = new Curar();
@@ -40,7 +40,7 @@ public abstract class Mutante extends Personaje
 	}
 
 	@Override
-	public void defender ( )
+	public void defender ()
 	{
 		this.setResistencia(this.getResistencia( ) + 5);
 		Defensa defender = new Defensa();
@@ -48,14 +48,14 @@ public abstract class Mutante extends Personaje
 	}
 
 	@Override
-	public void pasar ( )
+	public void pasar ()
 	{
 		Pasar pasar= new Pasar();
 		pasar.ejecutar(this);
 	}
 
 	@Override
-	public void repararArma ( )
+	public void repararArma ()
 	{
 		this.getArma( ).reparar( );
 		RepararArma reparar = new RepararArma();
