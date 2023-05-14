@@ -16,5 +16,10 @@ public abstract class EstadoJugador
 
 	protected Personaje personaje;
 
+	public EstadoJugador (Personaje personaje)
+	{
+		this.personaje = personaje;
+	}
+
 	public abstract void hacerEstado ( );
 }

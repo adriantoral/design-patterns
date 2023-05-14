@@ -11,7 +11,7 @@ public class Curar implements EstrategiaPrincipal
 		// código para curar el personaje
 		System.out.println("El personaje se ha curado ");
 
-		personaje.curar();
+		personaje.curar( );
 	}
 
 }

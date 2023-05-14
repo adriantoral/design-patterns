@@ -9,20 +9,24 @@ import personajes.tipos.Mutante;
 
 
 //MUNDO!
-public class Mundo1 implements Mundos{
+public class Mundo1 implements Mundos
+{
 
-    @Override
-    public Mago creaMago() {
-        return new MagoMundo1();
-    }
+	@Override
+	public Mago creaMago ( )
+	{
+		return new MagoMundo1( );
+	}
 
-    @Override
-    public Guerrero creaGuerrero() {
-        return new GuerreroMundo1();
-    }
+	@Override
+	public Guerrero creaGuerrero ( )
+	{
+		return new GuerreroMundo1( );
+	}
 
-    @Override
-    public Mutante creaMutante() {
-        return new MutanteMundo1();
-    }
+	@Override
+	public Mutante creaMutante ( )
+	{
+		return new MutanteMundo1( );
+	}
 }

@@ -2,13 +2,14 @@ package personajes.estados;
 
 import personajes.EstadoJugador;
 import personajes.EstadoVida;
+import personajes.Personaje;
 
 public class Muerto extends EstadoJugador
 {
-
-	public Muerto ( )
+	public Muerto (Personaje personaje)
 	{
-		super.personaje.setEstadoVida(EstadoVida.MUERTO);
+		super(personaje);
+		this.personaje.setEstadoVida(EstadoVida.MUERTO);
 	}
 
 	@Override
@@ -16,5 +17,4 @@ public class Muerto extends EstadoJugador
 	{
 		System.out.println("PERSONABLE MUERTO");
 	}
-
 }

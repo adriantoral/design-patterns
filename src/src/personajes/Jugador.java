@@ -1,12 +1,7 @@
 package personajes;
 
 import armas.melee.Martillo;
-import calculador.Calculador;
-import decorator.Ataque;
-import decorator.AtaqueDebil;
-import decorator.AtaqueFuerte;
-import decorator.AtaqueNormal;
-import estrategia.*;
+import estrategia.Ataques;
 
 
 public class Jugador extends Personaje
@@ -20,9 +15,9 @@ public class Jugador extends Personaje
 	/**
 	 * Inicializa la clase Jugador.
 	 */
-	public Jugador ( )
+	public Jugador (String nombre)
 	{
-		super(25, 40, 33, new Martillo( ));
+		super(25, 40, 33, nombre, new Martillo( ));
 		this.ataques = new Ataques( );
 	}
 
@@ -43,64 +38,39 @@ public class Jugador extends Personaje
 	}
 
 	/**
-	 * @param personaje El personaje a atacar.
-	 */
-	@Override
-	public void atacar (Personaje personaje)
-	{
-		Ataque ataque = new AtaqueNormal(this), ataqueDecorado;
-
-		if (this.getFuerza( ) <= 25) ataqueDecorado = new AtaqueDebil(ataque);
-		else if (this.getFuerza( ) > 25 && this.getFuerza( ) <= 40) ataqueDecorado = ataque;
-		else ataqueDecorado = new AtaqueFuerte(ataque);
-
-		ataqueDecorado.atacar( );
-		personaje.setVida(personaje.getVida( ) - Calculador.getCalculador( ).calculaResultadoAtaque(this, personaje));
-
-		Ataques ataques = new Ataques( );
-		ataques.ejecutar(this);
-	}
-
-	/**
 	 * Cura al personaje en 20 unidades de vida.
 	 */
 	@Override
-	public void curar ()
+	public void curar ( )
 	{
 		this.setVida(this.getVida( ) + 20);
-		Curar curar = new Curar( );
-		curar.ejecutar(this);
+		this.cambiarEstado( );
 	}
 
 	/**
 	 * Aumenta la resistencia en 5 unidades.
 	 */
 	@Override
-	public void defender ()
+	public void defender ( )
 	{
 		this.setResistencia(this.getResistencia( ) + 5);
-		Defensa defender = new Defensa( );
-		defender.ejecutar(this);
 	}
 
 	/**
 	 *
 	 */
 	@Override
-	public void pasar ()
+	public void pasar ( )
 	{
-		Pasar pasar = new Pasar( );
-		pasar.ejecutar(this);
+		// Pasar
 	}
 
 	/**
 	 * Repara el arma.
 	 */
 	@Override
-	public void repararArma ()
+	public void repararArma ( )
 	{
 		this.getArma( ).reparar( );
-		RepararArma reparar = new RepararArma( );
-		reparar.ejecutar(this);
 	}
 }

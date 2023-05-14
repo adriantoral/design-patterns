@@ -4,7 +4,6 @@ import personajes.Personaje;
 
 public class Ataques implements EstrategiaPrincipal
 {
-
 	@Override
 	public void ejecutar (Personaje personaje)
 	{
@@ -15,8 +14,7 @@ public class Ataques implements EstrategiaPrincipal
 	public void ejecutar (Personaje personaje, Personaje enemigo)
 	{
 		// código para realizar el ataque
-		this.ejecutar(enemigo);
-		
+		this.ejecutar(personaje);
 		personaje.atacar(enemigo);
 	}
 }
