@@ -1,12 +1,11 @@
 package personajes.enemigos;
 
-import armas.Arma;
-import armas.melee.Martillo;
+import armas.rango.Arco;
 
 public class GuerreroMundo3 extends  personajes.tipos.Guerrero{
     public GuerreroMundo3(){
 
-        super(70,40,40,new Martillo());
+        super(70,40,40,new Arco());
 
     }
 }
