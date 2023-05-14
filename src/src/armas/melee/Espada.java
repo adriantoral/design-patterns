@@ -5,7 +5,7 @@ import armas.Arma;
 public class Espada extends Arma {
 
 	public Espada() {
-		super(13, 17, 8, "Espada de Link");
+		super(13, 17, 8, "Espada de la muerte");
 		//inicia la clase Espada
 		
 	}
