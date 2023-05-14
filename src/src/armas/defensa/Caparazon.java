@@ -21,7 +21,7 @@ public class Caparazon extends Arma
 	@Override
 	public void reparar ( )
 	{
-		
+
 		this.setUtilidad(this.getUtilidad( ) + 2);
 	}
 

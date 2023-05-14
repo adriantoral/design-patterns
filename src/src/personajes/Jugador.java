@@ -6,11 +6,7 @@ import decorator.Ataque;
 import decorator.AtaqueDebil;
 import decorator.AtaqueFuerte;
 import decorator.AtaqueNormal;
-import estrategia.Ataques;
-import estrategia.Curar;
-import estrategia.Defensa;
-import estrategia.Pasar;
-import estrategia.RepararArma;
+import estrategia.*;
 
 
 public class Jugador extends Personaje
@@ -19,7 +15,7 @@ public class Jugador extends Personaje
 	//Variable para controlar el estado
 	private EstadoJugador estado;
 	//Control de los ataques
-	private Ataques ataques;
+	private final Ataques ataques;
 
 	/**
 	 * Inicializa la clase Jugador.
@@ -27,7 +23,7 @@ public class Jugador extends Personaje
 	public Jugador ( )
 	{
 		super(25, 40, 33, new Martillo( ));
-		this.ataques=new Ataques();
+		this.ataques = new Ataques( );
 	}
 
 	/**
@@ -60,8 +56,8 @@ public class Jugador extends Personaje
 
 		ataqueDecorado.atacar( );
 		personaje.setVida(personaje.getVida( ) - Calculador.getCalculador( ).calculaResultadoAtaque(this, personaje));
-		
-		Ataques ataques = new Ataques();
+
+		Ataques ataques = new Ataques( );
 		ataques.ejecutar(this);
 	}
 
@@ -72,7 +68,7 @@ public class Jugador extends Personaje
 	public void curar ( )
 	{
 		this.setVida(this.getVida( ) + 20);
-		Curar curar = new Curar();
+		Curar curar = new Curar( );
 		curar.ejecutar(this);
 	}
 
@@ -83,7 +79,7 @@ public class Jugador extends Personaje
 	public void defender ( )
 	{
 		this.setResistencia(this.getResistencia( ) + 5);
-		Defensa defender = new Defensa();
+		Defensa defender = new Defensa( );
 		defender.ejecutar(this);
 	}
 
@@ -93,7 +89,7 @@ public class Jugador extends Personaje
 	@Override
 	public void pasar ( )
 	{
-		Pasar pasar= new Pasar();
+		Pasar pasar = new Pasar( );
 		pasar.ejecutar(this);
 	}
 
@@ -104,7 +100,7 @@ public class Jugador extends Personaje
 	public void repararArma ( )
 	{
 		this.getArma( ).reparar( );
-		RepararArma reparar = new RepararArma();
+		RepararArma reparar = new RepararArma( );
 		reparar.ejecutar(this);
 	}
 }
