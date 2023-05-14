@@ -1,7 +1,10 @@
 package personajes;
 
 import armas.Arma;
-import personajes.estados.*;
+import personajes.estados.Herido;
+import personajes.estados.Malherido;
+import personajes.estados.Muerto;
+import personajes.estados.Saludable;
 
 public abstract class Personaje
 {
@@ -29,7 +32,7 @@ public abstract class Personaje
 		this.agilidad = agilidad;
 		this.vida = 100;
 		//this.estadoVida = EstadoVida.SALUDABLE;
-		this.estadoJugador = new Saludable();
+		this.estadoJugador = new Saludable( );
 		this.arma = arma;
 	}
 
@@ -117,26 +120,34 @@ public abstract class Personaje
 	{
 		this.arma = arma;
 	}
-	
+
 	//Metodo que cuando lo llames, va a coger la vida que tenga el personaje y segun cumpla una u otra condicion, llama a una funcion u a otra
-	public void cambiarEstado() {
-		
-		int porcentajeVida = getVida();
-		
-		if (porcentajeVida >= 0 && porcentajeVida < 25) {
-		    
-			this.estadoJugador = new Muerto();
-			
-		} else if (porcentajeVida >= 25 && porcentajeVida < 50) {
-		   
-			this.estadoJugador = new Malherido();
-			
-		} else if (porcentajeVida >= 50 && porcentajeVida < 75) {
-			
-			this.estadoJugador = new Herido();
-			
-		} else if (porcentajeVida >= 75 && porcentajeVida <= 100){
-			this.estadoJugador = new Saludable();
+	public void cambiarEstado ( )
+	{
+
+		int porcentajeVida = getVida( );
+
+		if (porcentajeVida >= 0 && porcentajeVida < 25)
+		{
+
+			this.estadoJugador = new Muerto( );
+
+		}
+		else if (porcentajeVida >= 25 && porcentajeVida < 50)
+		{
+
+			this.estadoJugador = new Malherido( );
+
+		}
+		else if (porcentajeVida >= 50 && porcentajeVida < 75)
+		{
+
+			this.estadoJugador = new Herido( );
+
+		}
+		else if (porcentajeVida >= 75 && porcentajeVida <= 100)
+		{
+			this.estadoJugador = new Saludable( );
 		}
 
 	}
