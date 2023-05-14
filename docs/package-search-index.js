@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"armas"},{"l":"armas.defensa"},{"l":"armas.melee"},{"l":"armas.rango"},{"l":"calculador"},{"l":"decorator"},{"l":"estrategia"},{"l":"mundos"},{"l":"personajes"},{"l":"personajes.enemigos"},{"l":"personajes.estados"},{"l":"personajes.tipos"}];updateSearchResults();

@@ -1,0 +1,13 @@
+unnamed package
+armas
+armas.defensa
+armas.melee
+armas.rango
+calculador
+decorator
+estrategia
+mundos
+personajes
+personajes.enemigos
+personajes.estados
+personajes.tipos
