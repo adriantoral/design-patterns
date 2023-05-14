@@ -6,7 +6,7 @@ import armas.melee.Hacha;
 public class MagoMundo3 extends personajes.tipos.Mago{
     public MagoMundo3(){
 
-        super(50,50,50, new Hacha());
+        super(25,50,50, new Hacha());
 
     }
 }

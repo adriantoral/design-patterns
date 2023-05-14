@@ -5,7 +5,7 @@ import armas.melee.Martillo;
 public class MutanteMundo1 extends personajes.tipos.Mutante{
     public MutanteMundo1() {
 
-        super(60,50,40, new Martillo());
+        super(35,50,40, new Martillo());
 
     }
 }
