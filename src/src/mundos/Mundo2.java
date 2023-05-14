@@ -7,6 +7,7 @@ import personajes.tipos.Guerrero;
 import personajes.tipos.Mago;
 import personajes.tipos.Mutante;
 
+//MUNDO!
 public class Mundo2 implements Mundos{
     @Override
     public Mago creaMago() {

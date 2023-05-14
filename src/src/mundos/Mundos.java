@@ -4,6 +4,8 @@ import personajes.tipos.Mago;
 import personajes.tipos.Guerrero;
 import personajes.tipos.Mutante;
 
+//MUNDO!
+
 public interface Mundos {
 
     public Mago creaMago();
