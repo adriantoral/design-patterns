@@ -2,20 +2,20 @@ package decorator;
 
 public abstract class Decorator implements Ataque
 {
-    private Ataque ataqueNormal;
+	private Ataque ataqueNormal;
 
-    public Decorator(Ataque ataqueNormal)
-    {
-        this.ataqueNormal = ataqueNormal;
-    }
+	public Decorator (Ataque ataqueNormal)
+	{
+		this.ataqueNormal = ataqueNormal;
+	}
 
-    public Ataque getAtaqueNormal()
-    {
-        return ataqueNormal;
-    }
+	public Ataque getAtaqueNormal ( )
+	{
+		return ataqueNormal;
+	}
 
-    public void setAtaqueNormal(Ataque ataqueNormal)
-    {
-        this.ataqueNormal = ataqueNormal;
-    }
+	public void setAtaqueNormal (Ataque ataqueNormal)
+	{
+		this.ataqueNormal = ataqueNormal;
+	}
 }

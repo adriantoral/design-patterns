@@ -1,20 +1,24 @@
 package armas.melee;
-
 import armas.Arma;
 
-public class Espada extends Arma {
-
+public class Espada extends Arma
+{
+	/**
+	 * Inicializa la clase Espada.
+	 */
+     
 	public Espada() {
 		super(13, 17, 8, "Espada de la muerte");
-		//inicia la clase Espada
-		
 	}
-
-	@Override
-	public void reparar() {
-		//reparar la espada con 3 puntos de utilidad
 		
-		this.setUtilidad(this.getUtilidad() + 3);
+	@Override
+	public void reparar ( )
+	{
+		/**
+		 * Repara estapada con 3 puntos de utilidad.
+		 */
+	     
+		this.setUtilidad(this.getUtilidad( ) + 3);
 	}
 
 }
