@@ -1,4 +1,4 @@
-package armas.defensiva;
+package armas.defensa;
 
 import armas.Arma;
 
